@@ -1,0 +1,7 @@
+{
+  "name": "smart-vds-mobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
