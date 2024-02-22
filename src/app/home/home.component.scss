@@ -1,15 +1,6 @@
 swiper-container {
     width: 100%;
-    height: 100%;
-}
-
-ion-content .swiper {
-    height: 100%;
-    width: 100%;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 3;
+    height: 90%;
 }
 
 .swiper {
@@ -22,24 +13,11 @@ ion-content .swiper {
     z-index: 1;
 }
 
-ion-content .page-container {
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto;
-}
-
 swiper-slide {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-ion-footer {
-    &.footer-md::before {
-        background-image: none;
-    }
 }
 
 .swiper .swiper-slide {
@@ -48,8 +26,8 @@ ion-footer {
     flex-shrink: 0;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    // width: 100%;
+    // height: 100%;
     font-size: 18px;
     text-align: center;
     box-sizing: border-box;
@@ -121,9 +99,9 @@ ion-button.nav-button.next-button {
     background-color: #d7bc65;
 }
 
-.swiper .swiper-slide .slide-container {
-    height: 100%;
-}
+// .swiper .swiper-slide .slide-container {
+//     height: 100%;
+// }
 
 .swiper-slide .slide-container .slide-top-container {
     background-color: #fff;
@@ -141,8 +119,4 @@ ion-button.nav-button.next-button {
 
 .swiper .swiper-slide .slide-container .text-container ion-text {
     text-align: left;
-}
-
-.swiper .swiper-slide .slide-container {
-    height: 100%;
 }

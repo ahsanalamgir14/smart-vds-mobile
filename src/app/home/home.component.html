@@ -1,50 +1,34 @@
-  <ion-content class="ion-padding" style="--offset-top: 0px; --offset-bottom: 0px;">
-    <swiper-container [pagination]="true" (slidechange)="swiperChange($event)" [loop]="true">
-      <!-- <swiper-slide class="slide-container">
-        <div class="slide-top-container">
-          <div class="image-container">
-            <ion-img
-              src="https://images.unsplash.com/photo-1637580690960-02f4673ba4c5?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987"></ion-img>
-          </div>
-        </div>
-        <div class="text-container">
-          <ion-text class="ios hydrated">
-            <h2>Receive money from around the world</h2>
-          </ion-text>
-          <ion-text class="ios hydrated">
-            <p> Get paid like a local. Work anywhere and link your account to Amazon, PayPal and more. Convert your
-              money in seconds. </p>
-          </ion-text></div>
-      </swiper-slide> -->
-      <swiper-slide class="slide-container">Headline 1</swiper-slide>
-      <swiper-slide class="slide-container">Headline 2</swiper-slide>
-      <swiper-slide class="slide-container">
-        <span>
-          Headline 3
-        </span>
-        <ion-button (click)="gotToOverview()">
-          Go to Overview
-        </ion-button>
-      </swiper-slide>
-    </swiper-container>
-    <!-- </div> -->
-    <div class="bottom-container">
-      <ion-grid>
-        <ion-row class="nav-button-container">
-          <ion-col>
-            <ion-button fill="clear"
-              class="nav-button skip-button ios button button-clear ion-activatable ion-focusable hydrated">
-              Skip
-            </ion-button>
-          </ion-col>
-          <ion-col>
-            <ion-button fill="clear"
-              class="nav-button next-button ios button button-clear ion-activatable ion-focusable hydrated">
-              Next
-            </ion-button>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </div>
-  </ion-content>
-<!-- </div> -->
+<ion-content class="ion-padding" style="--offset-top: 0px; --offset-bottom: 0px;">
+  <swiper-container [pagination]="true" (slidechange)="swiperChange($event)" [loop]="true" #swiper
+    class="swiper-container">
+    <swiper-slide class="slide-container">Headline 1</swiper-slide>
+    <swiper-slide class="slide-container">Headline 2</swiper-slide>
+    <swiper-slide class="slide-container">
+      <span>
+        Headline 3
+      </span>
+      <ion-button (click)="gotToOverview()">
+        Go to Overview
+      </ion-button>
+    </swiper-slide>
+  </swiper-container>
+
+  <div class="bottom-container">
+    <ion-grid>
+      <ion-row class="nav-button-container">
+        <ion-col>
+          <ion-button fill="clear" (click)="prev()"
+            class="nav-button skip-button ios button button-clear">
+            Prev
+          </ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button fill="clear" (click)="next()"
+            class="nav-button next-button ios button button-clear">
+            Next
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
