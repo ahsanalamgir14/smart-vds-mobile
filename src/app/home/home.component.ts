@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { register } from 'swiper/element/bundle';
+import { Router } from '@angular/router';
 
 register();
 
@@ -10,16 +11,17 @@ register();
 })
 export class HomeComponent  implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log('home loaded');
+  }
 
   
   swiperChange(event: any) {
     console.log('event: ', event);
   }
 
-  
   next() {
     console.log('event: ', event);
   }
@@ -27,6 +29,12 @@ export class HomeComponent  implements OnInit {
   
   prev() {
     console.log('event: ', event);
+  }
+
+  gotToOverview() {
+    // this.router.navigate(['overview'])
+    this.router.navigateByUrl('/overview');
+
   }
 
 }
