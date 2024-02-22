@@ -10,10 +10,6 @@ const routes: Routes = [
     path: 'overview',
     loadChildren: () => import('./overview/overview.module').then(m => m.OverviewModule)
   },
-  // {
-  //   path: '',
-  //   loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
-  // },
   {
     path: '',
     redirectTo: '/home',
