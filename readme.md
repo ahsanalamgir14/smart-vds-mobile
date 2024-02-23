@@ -17,7 +17,7 @@ Before you begin, make sure you have the following installed on your machine:
 
 ### Installation
 
-1- Run "rm -f package.lock"
-2. Run "Npm install" in project directory
-3- Run "ionic serve" to run project locally
-4- Run "ionic build" to create build
+- 1- Run "rm -f package.lock"
+- 2. Run "Npm install" in project directory
+- 3- Run "ionic serve" to run project locally
+- 4- Run "ionic build" to create build
